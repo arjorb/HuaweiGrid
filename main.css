@@ -65,6 +65,18 @@
 .card__image:hover {
   transform: scale(1.1);
 }
+
+.card::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  box-shadow: inset 0px 50px 100px #000000;
+}
+
 .card:nth-child(5) {
   height: 210px;
 }
